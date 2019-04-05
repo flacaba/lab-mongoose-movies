@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const celebritySchema = new mongoose.Schema ({
-  title: String,
+  name: String,
   occupation: String,
   catchPhrase: String
 })
