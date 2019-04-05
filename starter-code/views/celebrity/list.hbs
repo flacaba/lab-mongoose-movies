@@ -1,11 +1,10 @@
+<h2 class="mb-4"> CELEBS LIST</h2>
 <div class="list-group">
   {{#each celebs as |celeb|}}
-    <a href="/books/{{ celeb.id }}" class="list-group-item list-group-item-action">
+    <a href="/celebrity/{{ celeb.id }}" class="list-group-item list-group-item-action">
       <div class="d-flex w-100 justify-content-between">
         <h5 class="mb-1">{{ celeb.name }}</h5>
       </div>
-      <p class="mb-1"> Occupation: {{ celeb.occupation }}.</p>
-      <p class="mb-1"> Catch Phrase: <span style="font-style: italic">"{{ celeb.catchPhrase}}"</span>.</p>
     </a>
   {{/each}}
 </div>
